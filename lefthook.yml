@@ -1,0 +1,19 @@
+colors:
+  cyan: '#9E4244'
+  gray: '#8B8B8B'
+  green: '#8A95A2'
+  red: '#6D0011'
+  yellow: '#A26B35'
+
+pre-commit:
+  parallel: true
+  commands:
+    js:
+      glob: '*.{js,ts,astro}'
+      run: npx prettier -w {staged_files} && npx eslint {staged_files} && git add {staged_files}
+    css:
+      glob: '*.{css,scss}'
+      run: npx prettier -w {staged_files} && npx stylelint {staged_files} && git add {staged_files}
+    md:
+      glob: '*.md'
+      run: npx prettier -w {staged_files} && git add {staged_files}
