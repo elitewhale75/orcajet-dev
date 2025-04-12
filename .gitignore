@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # direnv
 .direnv
+
+#build output
+.netlify
+dist
