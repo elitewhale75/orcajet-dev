@@ -1,0 +1,31 @@
+html {
+  background-color: #F2EFE7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  color: #205781;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+}
+
+a {
+  color: #205781;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF715B;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

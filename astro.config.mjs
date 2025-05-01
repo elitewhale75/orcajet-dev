@@ -5,4 +5,5 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   adapter: netlify(),
+  site: 'https://orcajet.dev'
 });
