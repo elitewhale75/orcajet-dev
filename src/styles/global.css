@@ -1,5 +1,6 @@
 html {
   background-color: #F2EFE7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -27,5 +28,4 @@ a:hover {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

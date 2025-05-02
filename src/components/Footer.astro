@@ -1,0 +1,37 @@
+---
+import Links from './Links.astro';
+
+export interface Props {
+  disableLinks: boolean;
+}
+
+const {disableLinks} = Astro.props;
+---
+
+<div class = "footer"> 
+  <div class="links">
+    <Links title="ph:github-logo-bold" 
+           href="https://github.com/elitewhale75" 
+           disabled={disableLinks} />
+
+    <Links title="ph:linkedin-logo-bold" 
+           href="https://www.linkedin.com/in/vignesh-guruswami-389a6a166/" 
+           disabled={disableLinks} />
+
+    <Links title="octicon:mail-16" 
+           href="mailto:vguruswa@yahoo.com" 
+           disabled={disableLinks} />
+  </div>
+</div>
+
+<style>
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5em;
+    padding: 2em 0em 1em 0em;
+    border-top: 1px solid #ccc;
+  }
+</style>

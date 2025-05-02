@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^6.2.5",
+    "@iconify-json/octicon": "^1.2.5",
+    "@iconify-json/ph": "^1.2.2",
     "astro": "^5.6.1",
+    "astro-icon": "^1.1.5",
     "eslint": "^9.24.0",
     "prettier": "^3.5.3"
   }

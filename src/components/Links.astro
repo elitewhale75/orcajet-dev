@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  title: string;
+  href: string;
+  ariaLabel?: string;
+  disabled?: boolean;
+}
+
+const {title, href, ariaLabel, disabled} = Astro.props;
+---
+
+{
+  disabled ? (
+    <span class="disabled">{}</span>
+  ) : (
+  <a {href}>
+    <Icon name={title} size=32 />
+  </a>
+  )
+}
+
+<style>
+  .disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  a {
+    color: #4F959D;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #FF6B01;
+    rotate: 6deg;
+  }
+</style>
